@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ir9-9T-P32">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Text To Speech-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TextToSpeech" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi, I'm Prashant." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QoE-XU-qbc">
+                                <rect key="frame" x="20" y="118" width="374" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="sKo-na-MOa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="हाय, मैं प्रशांत हूं" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q2g-VV-onm">
+                                <rect key="frame" x="20" y="301" width="374" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="iZq-py-Kac"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ajq-nT-sZa">
+                                <rect key="frame" x="20" y="200" width="374" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Yii-16-6Ze"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="playEnglishTextAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r1H-pR-JA6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1zi-6z-0Kh">
+                                <rect key="frame" x="20" y="383" width="374" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="x5a-Sv-Wn3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="प्ले"/>
+                                <connections>
+                                    <action selector="playHindiTextAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xuy-8U-EZG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="1zi-6z-0Kh" firstAttribute="top" secondItem="q2g-VV-onm" secondAttribute="bottom" constant="8" id="GqC-dT-BhV"/>
+                            <constraint firstItem="1zi-6z-0Kh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ImL-qj-uui"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ajq-nT-sZa" secondAttribute="trailing" constant="20" id="NCr-c5-LTL"/>
+                            <constraint firstItem="ajq-nT-sZa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="SS5-1q-rlK"/>
+                            <constraint firstItem="q2g-VV-onm" firstAttribute="top" secondItem="ajq-nT-sZa" secondAttribute="bottom" constant="57" id="Vir-9s-3fA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QoE-XU-qbc" secondAttribute="trailing" constant="20" id="ZtA-kd-azV"/>
+                            <constraint firstItem="q2g-VV-onm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="bFu-sz-UYV"/>
+                            <constraint firstItem="QoE-XU-qbc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="cgp-al-gLh"/>
+                            <constraint firstItem="ajq-nT-sZa" firstAttribute="top" secondItem="QoE-XU-qbc" secondAttribute="bottom" constant="8" id="j5G-uq-vAs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q2g-VV-onm" secondAttribute="trailing" constant="20" id="pBf-Qn-D31"/>
+                            <constraint firstItem="QoE-XU-qbc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="vQy-D3-tf9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1zi-6z-0Kh" secondAttribute="trailing" constant="20" id="xy7-d1-K5W"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Text To Speech" id="mWJ-5x-s8H"/>
+                    <connections>
+                        <outlet property="englishLabel" destination="QoE-XU-qbc" id="bGU-9k-axv"/>
+                        <outlet property="englishPlayButton" destination="ajq-nT-sZa" id="2Qy-D7-cDS"/>
+                        <outlet property="hindiLabel" destination="q2g-VV-onm" id="aey-nV-hDw"/>
+                        <outlet property="hindiPlayButton" destination="1zi-6z-0Kh" id="gT0-CJ-yNP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="763.768115942029" y="138.61607142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jzz-Za-L6O">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ir9-9T-P32" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="olQ-Ly-gUc">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="5yo-5r-27s"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4bh-pM-R7e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-146.37681159420291" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>
